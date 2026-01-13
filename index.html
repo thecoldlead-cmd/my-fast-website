@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h2>Simple Photo Editor</h2>
+        <input type="file" id="upload" accept="image/*">
+        <canvas id="canvas"></canvas>
+        
+        <div class="controls">
+            <label>Brightness</label>
+            <input type="range" id="brightness" min="0" max="200" value="100">
+            
+            <label>Saturation</label>
+            <input type="range" id="saturation" min="0" max="200" value="100">
+            
+            <label>Invert</label>
+            <input type="range" id="invert" min="0" max="100" value="0">
+        </div>
+        
+        <button id="download">Download Image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
